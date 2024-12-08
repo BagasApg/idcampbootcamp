@@ -12,7 +12,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 nav {
     background-color: salmon;
-    /* padding: 12px; */
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
 }
 
 #content {
@@ -50,15 +58,11 @@ article.card {
     margin-bottom: 16px;
 }
 
-.article-title {
-    margin-bottom: 24px;
-}
-
 .nav-list li {
     box-sizing: border-box;
     list-style-type: none;
     display: inline;
-    font-size: 20px; 
+    font-size: 18px; 
     height: 24px;
     padding: 24px;
 }
@@ -70,13 +74,16 @@ article.card {
 
 nav ul {
     padding: 24px 32px;
+    
 }
 
 nav h1 {
     display: inline;
 }
 
-
+header h2 {
+    margin: 0 0 4px 0;
+}
 
 @media screen and (max-width: 1000px){
     #content, aside {
